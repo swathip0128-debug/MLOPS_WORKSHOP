@@ -50,6 +50,7 @@ def train_models():
 
     results = []
     os.makedirs(MODEL_DIR, exist_ok=True)
+    mlflow.set_experiment("Student Performance Prediction")
 
     best_mae = float("inf")
     best_model = None
